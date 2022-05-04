@@ -1,7 +1,7 @@
 # Vim
 My Vim and ZSH settings with the plugins I use everyday. Feel free to try them!
 
-##Read Me in construction
+## Read Me in construction
 
 To install the Oh-My-Zsh run
 <code>sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"</code>
