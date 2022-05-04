@@ -87,3 +87,6 @@ nnoremap <space> za
 
 "Set encoding
 set encoding=UTF-8
+
+"Make and run
+nnoremap <C-m> :make; ./build/bin/minishell<cr>
