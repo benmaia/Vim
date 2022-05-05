@@ -32,6 +32,12 @@ cd ~/Desktop/Vim && ./install.sh
   <li>Vim</li>
   <li>Curl </li>
   <li>Plug Vim <a href="https://github.com/junegunn/vim-plug" target="_blank">here</a></li>
+  <li>NERDTree <a href="https://github.com/preservim/nerdtree" target="_blank">here</a></li>
+  <li>NERDTree Git <a href="https://github.com/Xuyuanp/nerdtree-git-plugin" target="_blank">here</a></li>
+  <li>Vim Devicons <a href="https://github.com/ryanoasis/vim-devicons" target="_blank">here</a></li>
+  <li>Colorscheme Sonokai <a href="https://github.com/sainnhe/sonokai" target="_blank">here</a></li>
+  <li>NERD Commenter <a href="https://github.com/preservim/nerdcommenter" target="_blank">here</a></li>
+  <li>Vim Airline <a href="https://github.com/vim-airline/vim-airline" target="_blank">here</a></li>
   <li>Vundle <a href="https://github.com/VundleVim/Vundle.vim" target="_blank">here</a></li>
   <li>YouCompleteMe <a href="https://github.com/ycm-core/YouCompleteMe" target="_blank">here</a></li>
   <li>Python3, mono-complete, golang, nodejs, default-jdk and npm <a href="https://github.com/ycm-core/YouCompleteMe#linux-64-bit" target="_blank">here</a></li></li>
