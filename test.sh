@@ -4,20 +4,12 @@
 sudo apt update
 sudo apt upgrade -y
 
-#GIT INSTALLATION
-if [[ -f "/usr/bin/git" ]]
-then
-	echo "You have Git Installed!"
-else
-	sudo apt install git
-fi
-
 #VIM INSTALLATION
 if [[ -f "/usr/bin/vim" ]]
 then
 	echo "You have Vim Installed!"
 else
-	sudo apt install vim
+	sudo apt install vim -y
 fi
 
 #CURL INSTALLATION
@@ -25,24 +17,16 @@ if [[ -f "/usr/bin/curl" ]]
 then
 	echo "You have Curl Installed!"
 else
-	sudo apt istall curl
+	sudo apt install curl -y
 fi
 
 #OH-MY-ZSH INSTALLATION
-if [[ -f "/usr/bin/zsh" ]]
-then
-	echo "You have Oh-My-Zsh Installed!"
-else
-	sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" -y
-fi
+sudo apt install zsh -y
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" -ydd
 
 #PLUG VIM INSTALL
-if [[ -f "~/.vim/autoload" ]]
-then
-	echo "You have Plug Vim Installed!"
-else
-	sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" -ydd
-fi
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 #VUNDLE INSTALL
 if [[ -f "~/.vim/bundle" ]]
@@ -51,6 +35,9 @@ then
 else
 	git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 fi
+
+sudo cp /home/$(whoami)/Desktop/Vim/.vimrc /home/$(whoami)
+sudo cp /home/$(whoami)/Desktop/Vim/.zshrc /home/$(whoami)
 
 #INSTALL PLUG VIM PLUGINS
 vim +PlugInstall +qall
