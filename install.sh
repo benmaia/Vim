@@ -33,13 +33,12 @@ else
 fi
 
 sudo cp /home/$(whoami)/Desktop/Vim/.vimrc /home/$(whoami)
-sudo cp /home/$(whoami)/Desktop/Vim/.zshrc /home/$(whoami)
 
 #YouCompleteMe INSTALL
 sudo apt install build-essential cmake vim-nox python3-dev
 sudo apt install mono-complete golang nodejs default-jdk npm
 cd ~/.vim/bundle/YouCompleteMe
-python3 install.py --all
+python3 install.py --all -y
 
 #NERD FONT INSTALL
 mkdir -p ~/.local/share/fonts
@@ -53,4 +52,12 @@ vim +PluginInstall +qall
 
 #OH-MY-ZSH INSTALLATION
 sudo apt install zsh -y
-sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" -ydd
+
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
+
+sudo cp /home/$(whoami)/Desktop/Vim/.zshrc /home/$(whoami)
+
+chsh -s $(which zsh)
+
+#IMPLEMENT ZSH CHANGES
+sudo reboot
