@@ -40,6 +40,7 @@ cd ~/Desktop/Vim && ./install.sh
   <li>42 Header <a href="https://github.com/42Paris/42header" target="_blank">here</a></li>
   <li>42 Norminette V3 <a href="https://github.com/42School/norminette" target="_blank">here</a></li>
   <li>Vim-Norminette <a href="https://github.com/alexandregv/norminette-vim" target="_blank">here</a></li>
+  <li>Tagbar <a href="https://github.com/preservim/tagbar" target="_blank">here</a></li>
   <li>NERDTree <a href="https://github.com/preservim/nerdtree" target="_blank">here</a></li>
   <li>NERDTree Git <a href="https://github.com/Xuyuanp/nerdtree-git-plugin" target="_blank">here</a></li>
   <li>Vim Devicons <a href="https://github.com/ryanoasis/vim-devicons" target="_blank">here</a></li>
@@ -68,6 +69,7 @@ cd ~/Desktop/Vim && ./install.sh
   </ul>
   <li> CTRL W + left/right - to move through windows</li>
   <li> CTRL left/right - to move through tabs</li>
+  <li> CTRL t - open a menu with all the functions in the file</li>
   <li> CTRL l - to close a window</li>
   <li> CTRL a - to install plugins in plug vim</li>
   <li> CTRL n - to use norminette</li>
