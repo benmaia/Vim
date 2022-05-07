@@ -76,20 +76,9 @@ vim +PluginInstall +qall
 
 echo -e "${BLUE}Installing Oh-My-Zsh${RES}"
 #OH-MY-ZSH INSTALLATION
-if [[ -f "~/.zshrc" ]]
-then
-	sudo apt install zsh -y
-else
-	echo "You have ZSH Installed!"
-fi
-
-if [[ -f "~/.oh-my-zsh/oh-my-zsh.sh" ]]
-then
-	sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
-	chsh -s $(which zsh)
-else
-	echo "You have OH MY ZSH Installed!"
-fi
+sudo apt install zsh -y
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
+chsh -s $(which zsh)
 
 sudo cp /home/$(whoami)/Desktop/Vim/.zshrc /home/$(whoami)
 
