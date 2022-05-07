@@ -73,6 +73,7 @@ cd ~/Desktop/Vim && ./install.sh
   <li> CTRL l - to close a window</li>
   <li> CTRL a - to install plugins in plug vim</li>
   <li> CTRL n - to use norminette</li>
+  <li> :Sub [word] [replace] - it replaces all the [word] in the file to the [replace], case sensitive, and only replace an entire word, and not fractions, ex: <code>: Sub Hello Hi</code></li>
 </ul>
 <p> Other VIM commands that alreayd com configure that are really usefull, I'm still learning new ones!</p>
 <ul>
@@ -83,7 +84,6 @@ cd ~/Desktop/Vim && ./install.sh
   <li> p - paste </li>
   <li> dd - deletes all the line, and copies it </li>
   <li> dap - deletes all the paragraph and copies it </li>
-  <li> :%s/wrong word/word to replace/g - it replaces all the wrong words to the word to replace in the file </li>
 </ul>
 <p> Like I said, I'm still learning new commands, if you know other ones that are really usefull please tell me, I want to incorporate them!</p>
 <p> I also have some alias to be use on TERMINAL in the <code>.zshrc</code> that I use a lot and I think you will to!</p>
