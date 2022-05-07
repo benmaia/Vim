@@ -44,6 +44,12 @@ python3 install.py --all -y
 mkdir -p ~/.local/share/fonts
 cd ~/.local/share/fonts && curl -fLo "Droid Sans Mono for Powerline Nerd Font Complete.otf" https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/DroidSansMono/complete/Droid%20Sans%20Mono%20Nerd%20Font%20Complete.otf
 
+#NORMINETTE
+sudo apt-get install -y python3-launchpadlib
+python3 -m pip install --upgrade pip setuptools
+python3 -m pip install norminette
+sudo cp -f /home/$(whoami)/Desktop/Vim/norminette.vim /home/$(whoami)/.vim/plugged/norminette-vim/compiler 
+
 #INSTALL PLUG VIM PLUGINS
 vim +PlugInstall +qall
 
@@ -51,13 +57,21 @@ vim +PlugInstall +qall
 vim +PluginInstall +qall
 
 #OH-MY-ZSH INSTALLATION
-sudo apt install zsh -y
+if [[ -f "~/.zshrc" ]]
+then
+	echo "You have ZSH Installed!"
+else
+	sudo apt install zsh -y
+fi
 
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
-
-sudo cp /home/$(whoami)/Desktop/Vim/.zshrc /home/$(whoami)
-
-chsh -s $(which zsh)
+if [[ -f "~/.oh-my-zsh" ]]
+then
+	echo "You have OH MY ZSH Installed!"
+else
+	sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
+	sudo cp /home/$(whoami)/Desktop/Vim/.zshrc /home/$(whoami)
+	chsh -s $(which zsh)
+fi
 
 #IMPLEMENT ZSH CHANGES
-sudo reboot
+#sudo reboot
