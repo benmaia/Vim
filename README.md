@@ -1,6 +1,8 @@
 # Vim
 <p>My Vim and ZSH settings with the plugins I use everyday. Feel free to try them!<p>
-
+  
+<img src="https://cdn.discordapp.com/attachments/461563270411714561/972534481128939591/ezgif-4-3d379d3cf7.gif" width="1000" height="450">
+  
 <h2> Index </h2>
 <p><a href="#Instalation">
   Instalation
@@ -56,6 +58,8 @@ cd ~/Desktop/Vim && ./install.sh
 <ul>
   <li> CTRL B - Open Nerd Tree </li>
   <ul>
+    <li> SHIFT c - to change root to the selected folder </li>
+    <li> SHIFT u - to go one dir back </li>
     <li> t - open the file in another tab</li>
     <li> s - open the file and split the screen verticaly</li>
     <li> i - open the file and split the screen horizontaly</li>
