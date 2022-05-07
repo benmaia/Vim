@@ -1,12 +1,17 @@
 # Vim
 <p>My Vim and ZSH settings with the plugins I use everyday. Feel free to try them!<p>
-
+  
+<img src="https://cdn.discordapp.com/attachments/461563270411714561/972534481128939591/ezgif-4-3d379d3cf7.gif" width="1000" height="450">
+  
 <h2> Index </h2>
 <p><a href="#Instalation">
   Instalation
 </a></p>
 <p><a href="#Plugins">
   Plugins
+</a></p>
+<p><a href="#Sc">
+  Shortcuts
 </a></p>
 <p><a href="#Man">
   Manually Instalation
@@ -47,6 +52,38 @@ cd ~/Desktop/Vim && ./install.sh
   <li>Nerd Font <a href="https://github.com/ryanoasis/nerd-fonts" target="_blank">here</a></li>
   <li>Oh-My-Zsh <a href="https://ohmyz.sh/" target="_blank">here</a></li>
 </ul>
+
+<h2 id="Sc">Shortcuts</h2>
+<p> Feel free to change the shortcuts, but this are some of that come configure and I think they are pretty usefull!</p>
+<ul>
+  <li> CTRL B - Open Nerd Tree </li>
+  <ul>
+    <li> SHIFT c - to change root to the selected folder </li>
+    <li> SHIFT u - to go one dir back </li>
+    <li> t - open the file in another tab</li>
+    <li> s - open the file and split the screen verticaly</li>
+    <li> i - open the file and split the screen horizontaly</li>
+    <li> m - opens a menu to add, delete, move, copy, etc a file</li>
+    <li> ? to opens a menu with all the commands possible </li>
+  </ul>
+  <li> CTRL W + left/right - to move through windows</li>
+  <li> CTRL left/right - to move through tabs</li>
+  <li> CTRL l - to close a window</li>
+  <li> CTRL a - to install plugins in plug vim</li>
+  <li> CTRL n - to use norminette</li>
+</ul>
+<p> Other VIM commands that alreayd com configure that are really usefull, I'm still learning new ones!</p>
+<ul>
+  <li> SHIFT v - select an entire line and you can select more then 1 line</li>
+  <li> CTRL v - selects the place you have your cursor in multiple rows, so you can write once, and appear in all lines selected at the same position </li>
+  <li> vap - selects all the paragraph</li>
+  <li> y - yarn or copy </li>
+  <li> p - paste </li>
+  <li> dd - deletes all the line, and copies it </li>
+  <li> dap - deletes all the paragraph and copies it </li>
+  <li> :%s/wrong word/word to replace/g - it replaces all the wrong words to the word to replace in the file </li>
+</ul>
+<p> Like I said, I'm still learning new commands, if you know other ones that are really usefull please tell me, I want to incorporate them!</p>
 
 <h2 id="Man">Manually Instalation</h2>
 
