@@ -32,6 +32,9 @@ cd ~/Desktop/Vim && ./install.sh
   <li>Vim</li>
   <li>Curl </li>
   <li>Plug Vim <a href="https://github.com/junegunn/vim-plug" target="_blank">here</a></li>
+  <li>42 Header <a href="https://github.com/42Paris/42header" target="_blank">here</a></li>
+  <li>42 Norminette V3 <a href="https://github.com/42School/norminette" target="_blank">here</a></li>
+  <li>Vim-Norminette <a href="https://github.com/alexandregv/norminette-vim" target="_blank">here</a></li>
   <li>NERDTree <a href="https://github.com/preservim/nerdtree" target="_blank">here</a></li>
   <li>NERDTree Git <a href="https://github.com/Xuyuanp/nerdtree-git-plugin" target="_blank">here</a></li>
   <li>Vim Devicons <a href="https://github.com/ryanoasis/vim-devicons" target="_blank">here</a></li>
@@ -55,6 +58,8 @@ Copy the .zshrc file to your root dir and reset the terminal.
 
 <p> Now you need to install <a href="https://github.com/junegunn/vim-plug" target="_blank">Plug Vim</a> and <a href="https://github.com/VundleVim/Vundle.vim" target="_blank">Vundle</a></p>
 
+Install norminette v3 <a href="https://github.com/42School/norminette" target="_blank">here</a> and 42 header 42 Header <a href="https://github.com/42Paris/42header" target="_blank">here</a>
+
 To install de Vim Plugins, copy the file .vimrc to your root dir.
 
 Then open .vimrc and press <code>Ctrl + a</code>.
@@ -62,6 +67,9 @@ Then open .vimrc and press <code>Ctrl + a</code>.
 After that, run <code>:PluginInstall</code>.
 
 Then Reset save the changes and exit vim.
+
+Copy the norminette.vim file to /home/$(whoami)/.vim/plugged/norminette-vim/compile.
+<code> sudo cp -f /home/$(whoami)/Desktop/Vim/norminette-vim /home/$(whoami)/.vim/plugged/norminette-vim/compile</code>
 
 The Auto-complete and the Icons for NEERTree need a bit more of work, just follow this instructions:
 
