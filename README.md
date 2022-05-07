@@ -55,7 +55,7 @@ cd ~/Desktop/Vim && ./install.sh
 </ul>
 
 <h2 id="Sc">Shortcuts</h2>
-<p> Feel free to change the shortcuts, but this are some of that come configure and I think they are pretty usefull!</p>
+<p> This are some shortcuts to use inside VIM. Feel free to change the shortcuts, but this are some of that come configure and I think they are pretty usefull!</p>
 <ul>
   <li> CTRL B - Open Nerd Tree </li>
   <ul>
@@ -86,7 +86,7 @@ cd ~/Desktop/Vim && ./install.sh
   <li> :%s/wrong word/word to replace/g - it replaces all the wrong words to the word to replace in the file </li>
 </ul>
 <p> Like I said, I'm still learning new commands, if you know other ones that are really usefull please tell me, I want to incorporate them!</p>
-<p> I also have some alias in the <code>.zshrc</code> that I use a lot and I think you will to!</p>
+<p> I also have some alias to be use on TERMINAL in the <code>.zshrc</code> that I use a lot and I think you will to!</p>
 <ul>
   <li> . - cleans the terminal </li>
   <li> web [any website] - open that website ex: <code>web github</code> </li>
