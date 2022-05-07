@@ -86,6 +86,19 @@ cd ~/Desktop/Vim && ./install.sh
   <li> :%s/wrong word/word to replace/g - it replaces all the wrong words to the word to replace in the file </li>
 </ul>
 <p> Like I said, I'm still learning new commands, if you know other ones that are really usefull please tell me, I want to incorporate them!</p>
+<p> I also have some alias in the <code>.zshrc</code> that I use a lot and I think you will to!</p>
+<ul>
+  <li> . - cleans the terminal </li>
+  <li> web <any website> - open that website ex: web github </li>
+  <li> google <your question> - opens a google page with your doubt ex: google how to cook </li>
+  <li> github - opens github </li>
+  <li> discord - opens discord </li>
+  <li> slack -opens slack </li>
+  <li> youtube - opens youtube </li>
+  <li> spotify - opens spotify </li>
+  <li> intra - opens 42 intra </li>
+</ul>
+<p> Feel free to add yours, and enjoy it!</p>
 
 <h2 id="Man">Manually Instalation</h2>
 
