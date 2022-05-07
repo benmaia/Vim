@@ -138,3 +138,9 @@ nnoremap <C-l> :q!<cr>
 
 "Make and run
 nnoremap <C-m> :make; ./build/bin/minishell<cr>
+
+"Alias on Vim
+command! -nargs=+ Sub call Sub(<f-args>)
+function! Sub( ... )
+    execute printf('%%substitute/\<%s\>/%s/g', a:1, a:2)
+endfunction
