@@ -73,7 +73,7 @@ cd ~/Desktop/Vim && ./install.sh
   <li> CTRL l - to close a window</li>
   <li> CTRL a - to install plugins in plug vim</li>
   <li> CTRL n - to use norminette</li>
-  <li> :Sub [word] [replace] - it replaces all the [word] in the file to the [replace], case sensitive, and only replace an entire word, and not fractions, ex: <code>: Sub Hello Hi</code></li>
+  <li> :Sub [word] [replace] - it replaces all the [word] in the file to the [replace], case sensitive, and only replace an entire word, and not fractions, ex: <code>:Sub Hello Hi</code></li>
 </ul>
 <p> Other VIM commands that alreayd com configure that are really usefull, I'm still learning new ones!</p>
 <ul>
