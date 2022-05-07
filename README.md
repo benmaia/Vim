@@ -89,8 +89,8 @@ cd ~/Desktop/Vim && ./install.sh
 <p> I also have some alias in the <code>.zshrc</code> that I use a lot and I think you will to!</p>
 <ul>
   <li> . - cleans the terminal </li>
-  <li> web <any website> - open that website ex: web github </li>
-  <li> google <your question> - opens a google page with your doubt ex: google how to cook </li>
+  <li> web [any website] - open that website ex: <code>web github</code> </li>
+  <li> google [your question] - opens a google page with your doubt ex: <code>google how to cook </code> </li>
   <li> github - opens github </li>
   <li> discord - opens discord </li>
   <li> slack -opens slack </li>
