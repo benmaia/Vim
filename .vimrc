@@ -32,6 +32,9 @@ Plug 'preservim/nerdcommenter'
 "Airline
 Plug 'vim-airline/vim-airline'
 
+"Tagbar
+Plug 'preservim/tagbar'
+
 "Norminette
 Plug 'vim-syntastic/syntastic'
 Plug 'alexandregv/norminette-vim'
@@ -45,6 +48,9 @@ nnoremap <leader>n :NERDTreeFocus<CR>
 nnoremap <C-b> :NERDTreeToggle<CR>
 nnoremap <C-Left> :tabprevious<CR>
 nnoremap <C-Right> :tabnext<CR>
+
+"Tagbar
+nmap <C-t> :TagbarToggle<CR>
 
 "Idk
 "let g:ale_enabled 

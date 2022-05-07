@@ -51,6 +51,7 @@ sudo cp /home/$(whoami)/Desktop/Vim/.vimrc /home/$(whoami)
 echo -e "${BLUE}Installing YouCompleteMe${RES}"
 #YouCompleteMe INSTALL
 sudo apt install build-essential cmake vim-nox python3-dev
+sudo apt-get install -y python3-launchpadlib
 sudo apt install mono-complete golang nodejs default-jdk npm
 cd ~/.vim/bundle/YouCompleteMe
 python3 install.py --all -y
@@ -63,6 +64,8 @@ cd ~/.local/share/fonts && curl -fLo "Droid Sans Mono for Powerline Nerd Font Co
 echo -e "${BLUE}Installing Norminette${RES}"
 #NORMINETTE
 sudo apt-get install -y python3-launchpadlib
+sudo apt install pip
+python3 -m pip install flake8
 python3 -m pip install --upgrade pip setuptools
 python3 -m pip install norminette
 sudo cp -f /home/$(whoami)/Desktop/Vim/norminette.vim /home/$(whoami)/.vim/plugged/norminette-vim/compiler 
