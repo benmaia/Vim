@@ -89,12 +89,13 @@ cd ~/Desktop/Vim && ./install.sh
 <p> I also have some alias to be use on TERMINAL in the <code>.zshrc</code> that I use a lot and I think you will to!</p>
 <ul>
   <li> . - cleans the terminal </li>
-  <li> web [any website] - open that website ex: <code>web github</code> </li>
+  <li> web [any website] - open that website ex: <code>web github.com/benmaia/Vim</code> </li>
   <li> google [your question] - opens a google page with your doubt ex: <code>google how to cook </code> </li>
   <li> github - opens github </li>
   <li> discord - opens discord </li>
   <li> slack -opens slack </li>
   <li> youtube - opens youtube </li>
+  <li> twitch - opens twitch </li>
   <li> spotify - opens spotify </li>
   <li> intra - opens 42 intra </li>
 </ul>
