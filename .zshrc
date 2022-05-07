@@ -14,3 +14,15 @@ source $ZSH/oh-my-zsh.sh
 
 #Alias
 alias .="clear"
+alias spotify="/snap/bin/spotify"
+alias discord="/snap/bin/discord"
+alias slack="/snap/bin/slack"
+alias youtube="xdg-open https://www.youtube.com/"
+alias intra="xdg-open https://profile.intra.42.fr/"
+alias github="xdg-open https://github.com/"
+alias twitch="xdg-open https://www.twitch.tv/zerkaa"
+
+function openWeb() {
+   xdg-open "https://www."$1".com"
+}
+alias web="openWeb"

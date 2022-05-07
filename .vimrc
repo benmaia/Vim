@@ -56,6 +56,7 @@ nmap <C-t> :TagbarToggle<CR>
 "let g:ale_enabled 
 "let g:ale_set_signs = 0
 set signcolumn=no
+set noro
 "set signcolumn=number
 
 "Syntax color
