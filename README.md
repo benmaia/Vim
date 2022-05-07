@@ -57,7 +57,7 @@ cd ~/Desktop/Vim && ./install.sh
 <h2 id="Sc">Shortcuts</h2>
 <p> This are some shortcuts to use inside VIM. Feel free to change the shortcuts, but this are some of that come configure and I think they are pretty usefull!</p>
 <ul>
-  <li> CTRL B - Open Nerd Tree </li>
+  <li> CTRL b - Open Nerd Tree </li>
   <ul>
     <li> SHIFT c - to change root to the selected folder </li>
     <li> SHIFT u - to go one dir back </li>
@@ -67,7 +67,7 @@ cd ~/Desktop/Vim && ./install.sh
     <li> m - opens a menu to add, delete, move, copy, etc a file</li>
     <li> ? to opens a menu with all the commands possible </li>
   </ul>
-  <li> CTRL W + left/right - to move through windows</li>
+  <li> CTRL w + left/right - to move through windows</li>
   <li> CTRL left/right - to move through tabs</li>
   <li> CTRL t - open a menu with all the functions in the file</li>
   <li> CTRL l - to close a window</li>
