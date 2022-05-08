@@ -52,6 +52,7 @@ cd ~/Desktop/Vim && ./install.sh
   <li>Python3, mono-complete, golang, nodejs, default-jdk and npm <a href="https://github.com/ycm-core/YouCompleteMe#linux-64-bit" target="_blank">here</a></li></li>
   <li>Nerd Font <a href="https://github.com/ryanoasis/nerd-fonts" target="_blank">here</a></li>
   <li>Oh-My-Zsh <a href="https://ohmyz.sh/" target="_blank">here</a></li>
+  <li>Git Auto Fetch <a href="https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/git-auto-fetch" target="_blank">here</a></li>
 </ul>
 
 <h2 id="Sc">Shortcuts</h2>
@@ -99,6 +100,7 @@ cd ~/Desktop/Vim && ./install.sh
   <li> spotify - opens spotify </li>
   <li> intra - opens 42 intra </li>
 </ul>
+<p> The Git Auto Fetch plugin in Oh My Zsh, like the name says, it will fetch the repo you are in, so you'll never run to a git push --force, or problems with repo not being updated </p>
 <p> Feel free to add yours, and enjoy it!</p>
 
 <h2 id="Man">Manually Instalation</h2>

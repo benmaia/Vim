@@ -8,7 +8,7 @@ export ZSH="/home/paijavai/.oh-my-zsh"
 ZSH_THEME="custom"
 
 #Plugins
-plugins=(git web-search)
+plugins=(git web-search git-auto-fetch)
 
 source $ZSH/oh-my-zsh.sh
 
