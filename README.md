@@ -40,6 +40,8 @@ cd ~/Desktop/Vim && ./install.sh
   <li>42 Header <a href="https://github.com/42Paris/42header" target="_blank">here</a></li>
   <li>42 Norminette V3 <a href="https://github.com/42School/norminette" target="_blank">here</a></li>
   <li>Vim-Norminette <a href="https://github.com/alexandregv/norminette-vim" target="_blank">here</a></li>
+  <li>FZF <a href="https://github.com/junegunn/fzf.vim" target="_blank">here</a></li>
+  <li>Vim Fugitive <a href="https://github.com/tpope/vim-fugitiveset" target="_blank">here</a></li>
   <li>Tagbar <a href="https://github.com/preservim/tagbar" target="_blank">here</a></li>
   <li>NERDTree <a href="https://github.com/preservim/nerdtree" target="_blank">here</a></li>
   <li>NERDTree Git <a href="https://github.com/Xuyuanp/nerdtree-git-plugin" target="_blank">here</a></li>
@@ -85,6 +87,14 @@ cd ~/Desktop/Vim && ./install.sh
   <li> p - paste </li>
   <li> dd - deletes all the line, and copies it </li>
   <li> dap - deletes all the paragraph and copies it </li>
+</ul>
+<ul>
+<p> Inside FZF Search, the commands are different </p>
+  <li> CTRL f - to open FZF </li>
+  <li> CTRL t - to open the file in a new tab</li>
+  <li> CTRL v - to open a file in vertical split</li>
+  <li> CTRL x - to open a file in horizontal split</li>
+  <li> ENTER - to open on the current window </li>
 </ul>
 <p> Like I said, I'm still learning new commands, if you know other ones that are really usefull please tell me, I want to incorporate them!</p>
 <p> I also have some alias to be use on TERMINAL in the <code>.zshrc</code> that I use a lot and I think you will to!</p>

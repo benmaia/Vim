@@ -12,6 +12,9 @@ Plugin 'VundleVim/Vundle.vim'
 "Install YouCompleteMe https://github.com/ycm-core/YouCompleteMe#linux-64-bit
 Plugin 'Valloric/YouCompleteMe'
 
+"Vim Fugitive
+Plugin 'tpope/vim-fugitiveset'
+
 call vundle#end()
 filetype plugin indent on
 
@@ -39,6 +42,11 @@ Plug 'preservim/tagbar'
 Plug 'vim-syntastic/syntastic'
 Plug 'alexandregv/norminette-vim'
 
+"Fzf search
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+
+
 call plug#end()
 map <c-a> :PlugInstall<cr>
 
@@ -55,7 +63,7 @@ nmap <C-t> :TagbarToggle<CR>
 "Idk
 "let g:ale_enabled 
 "let g:ale_set_signs = 0
-set signcolumn=no
+"set signcolumn=no
 set noro
 "set signcolumn=number
 
@@ -105,6 +113,13 @@ let g:syntastic_auto_loc_list = 1
 
 " Skip check when closing
 let g:syntastic_check_on_wq = 0
+
+"Fzf search
+nnoremap <C-f> :Files<cr>
+"let g:fzf_layout = { 'window': { 'width': 0.9, 'height': 0.6 } }
+
+"set termguicolors
+"colorscheme bat
 
 "Identation
 set autoindent
