@@ -84,6 +84,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 chsh -s $(which zsh)
 
 sudo cp /home/$(whoami)/Desktop/Vim/.zshrc /home/$(whoami)
+sudo cp /home/$(whoami)/Desktop/Vim/custom.zsh-theme /home/$(whoami)/.oh-my-zsh/themes
 
 echo -e "${BLUE}Reseting computer${RES}"
 sleep 2

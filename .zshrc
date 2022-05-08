@@ -5,7 +5,7 @@
 export ZSH="/home/paijavai/.oh-my-zsh"
 
 #Theme
-ZSH_THEME="jbergantine"
+ZSH_THEME="custom"
 
 #Plugins
 plugins=(git web-search)
