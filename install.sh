@@ -72,6 +72,13 @@ python3 -m pip install --upgrade pip setuptools
 python3 -m pip install norminette
 sudo cp -f /home/$(whoami)/Desktop/Vim/norminette.vim /home/$(whoami)/.vim/plugged/norminette-vim/compiler 
 
+echo -e "${BLUE}Installing Vim Fugitive${RES}"
+#VIM FUGITIVE - GIT on VIM
+mkdir -p ~/.vim/pack/tpope/start
+cd ~/.vim/pack/tpope/start
+git clone https://tpope.io/vim/fugitive.git
+vim -u NONE -c "helptags fugitive/doc" -c q
+
 echo -e "${BLUE}Installing Vim Plugins${RES}"
 #INSTALL PLUG VIM PLUGINS
 vim +PlugInstall +qall
