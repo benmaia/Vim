@@ -111,7 +111,7 @@ cd ~/Desktop/Vim && ./install.sh
   <li> spotify - opens spotify </li>
   <li> intra - opens 42 intra </li>
 </ul>
-<p> The Git Auto Fetch plugin in Oh My Zsh, like the name says, it will fetch the repo you are in, so you'll never run to a git push --force, or problems with repo not being updated </p>
+<p> The Git Auto Fetch plugin in Oh My Zsh, like the name says, it will fetch the repo you are in, so you'll never run to a git push --force, or problems with repo not being updated, you will still need to git pull tho! Don't forget! </p>
 <p> Feel free to add yours, and enjoy it!</p>
 
 <h2 id="Man">Manually Instalation</h2>
