@@ -9,6 +9,8 @@ echo -e "${BLUE}Updating and Upgrading${RES}"
 sudo apt update
 sudo apt upgrade -y
 
+sudo apt install bat
+
 echo -e "${BLUE}Installing Vim${RES}"
 #VIM INSTALLATION
 if [[ -f "/usr/bin/vim" ]]
