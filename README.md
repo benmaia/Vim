@@ -77,6 +77,7 @@ cd ~/Desktop/Vim && ./install.sh
   <li> CTRL a - to install plugins in plug vim</li>
   <li> CTRL n - to use norminette</li>
   <li> :Sub [word] [replace] - it replaces all the [word] in the file to the [replace], case sensitive, and only replace an entire word, and not fractions, ex: <code>:Sub Hello Hi</code></li>
+  <li> :Git [command] - does evey command git inside vim, check <a href="https://github.com/tpope/vim-fugitiveset" target="_blank">here</a></li>
 </ul>
 <p> Other VIM commands that alreayd com configure that are really usefull, I'm still learning new ones!</p>
 <ul>
