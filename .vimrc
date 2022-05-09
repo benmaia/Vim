@@ -12,9 +12,6 @@ Plugin 'VundleVim/Vundle.vim'
 "Install YouCompleteMe https://github.com/ycm-core/YouCompleteMe#linux-64-bit
 Plugin 'Valloric/YouCompleteMe'
 
-"Vim Fugitive
-Plugin 'tpope/vim-fugitiveset'
-
 call vundle#end()
 filetype plugin indent on
 

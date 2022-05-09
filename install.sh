@@ -63,6 +63,13 @@ echo -e "${BLUE}Installing Nerd Font${RES}"
 mkdir -p ~/.local/share/fonts
 cd ~/.local/share/fonts && curl -fLo "Droid Sans Mono for Powerline Nerd Font Complete.otf" https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/DroidSansMono/complete/Droid%20Sans%20Mono%20Nerd%20Font%20Complete.otf
 
+echo -e "${BLUE}Installing Vim Fugitive${RES}"
+#VIM FUGITIVE - Git on Vim
+mkdir -p ~/.vim/pack/tpope/start
+cd ~/.vim/pack/tpope/start
+git clone https://tpope.io/vim/fugitive.git
+vim -u NONE -c "helptags fugitive/doc" -c q
+
 echo -e "${BLUE}Installing Norminette${RES}"
 #NORMINETTE
 sudo apt-get install -y python3-launchpadlib
