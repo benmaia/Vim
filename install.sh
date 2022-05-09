@@ -77,6 +77,8 @@ vim +PlugInstall +qall
 #INSTALL VUNDLE PLUGINS
 vim +PluginInstall +qall
 
+~/.vim/bundle/YouCompleteMe/./install.py
+
 echo -e "${BLUE}Installing Oh-My-Zsh${RES}"
 #OH-MY-ZSH INSTALLATION
 sudo apt install zsh -y
