@@ -24,7 +24,7 @@ git -C ~/Desktop clone https://github.com/benmaia/Vim.git
 ```
 
 ```bash
-cd ~/Desktop/Vim && ./install.sh
+cd ~/Desktop/Vim && ./install.sh -y
 ```
 
 <p> The <code>./install.sh</code> will install all the vim plugins, zsh and set zsh as default shell and then reboot the system!</p>
