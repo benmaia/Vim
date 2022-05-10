@@ -30,7 +30,7 @@ cd ~/Desktop/Vim && ./install.sh
 <p> The <code>./install.sh</code> will install all the vim plugins, zsh and set zsh as default shell and then reboot the system!</p>
 
 <h2 id="Plugins">Plugins</h2>
-
+<p> If you want to unistall some plugins you just need to edit the ~/.vimrc file and remove the plugins in there!</p>
 <p> The content of the script that will be downloaded and installed is: </p>
 <ul>
   <li>Update and Upgrade of the system</li>
@@ -118,29 +118,4 @@ cd ~/Desktop/Vim && ./install.sh
 
 <p> You will need vim, and curl instaled</p>
 
-To install the Oh-My-Zsh run
-<code>sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"</code>
-Copy the .zshrc file to your root dir and reset the terminal.
-
-<p> Now you need to install <a href="https://github.com/junegunn/vim-plug" target="_blank">Plug Vim</a> and <a href="https://github.com/VundleVim/Vundle.vim" target="_blank">Vundle</a></p>
-
-Install norminette v3 <a href="https://github.com/42School/norminette" target="_blank">here</a> and 42 header 42 Header <a href="https://github.com/42Paris/42header" target="_blank">here</a>
-
-To install de Vim Plugins, copy the file .vimrc to your root dir.
-
-Then open .vimrc and press <code>Ctrl + a</code>.
-
-After that, run <code>:PluginInstall</code>.
-
-Then Reset save the changes and exit vim.
-
-Copy the norminette.vim file to /home/$(whoami)/.vim/plugged/norminette-vim/compile.
-<code> sudo cp -f /home/$(whoami)/Desktop/Vim/norminette-vim /home/$(whoami)/.vim/plugged/norminette-vim/compile</code>
-
-The Auto-complete and the Icons for NEERTree need a bit more of work, just follow this instructions:
-
-Auto-complete: https://github.com/ycm-core/YouCompleteMe#linux-64-bit
-
-Icons: https://github.com/ryanoasis/nerd-fonts#font-installation
-
-Next time you open vim, the plugins will all be instaled! Enjoy!
+<p> If you prefer to install manually, you can go to <a href="https://github.com/benmaia/Vim/edit/master/README.md#plugins">Plugins</a> and click in the "here" links, that will take you to the original repository of the plugin and have the instructions in how to install and use it!</p>
