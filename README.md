@@ -118,4 +118,4 @@ cd ~/Desktop/Vim && ./install.sh
 
 <p> You will need vim, and curl instaled</p>
 
-<p> If you prefer to install manually, you can go to <a href="https://github.com/benmaia/Vim#Plugins">Plugins</a> and click in the "here" links, that will take you to the original repository of the plugin and have the instructions in how to install and use it!</p>
+<p> If you prefer to install manually, you can go to <a href="#Plugins">Plugins</a> and click in the "here" links, that will take you to the original repository of the plugin and have the instructions in how to install and use it!</p>
