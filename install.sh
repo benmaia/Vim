@@ -4,6 +4,8 @@
 BLUE='\033[1;34m'
 RES='\033[0m'
 
+notify-send "Instalation started" 
+
 echo -e "${BLUE}Updating and Upgrading${RES}"
 #UPDATE && UPGRADE
 sudo apt update
@@ -105,6 +107,6 @@ sudo cp /home/$(whoami)/Desktop/Vim/.zshrc /home/$(whoami)
 sudo cp /home/$(whoami)/Desktop/Vim/custom.zsh-theme /home/$(whoami)/.oh-my-zsh/themes
 
 echo -e "${BLUE}Reseting computer${RES}"
-sleep 2
+
 #IMPLEMENT ZSH CHANGES
-sudo reboot
+notify-send "Instalation complete, please restart your computer" 
