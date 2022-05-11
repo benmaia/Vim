@@ -70,8 +70,8 @@ cd ~/Desktop/Vim && ./install.sh -y
     <li> m - opens a menu to add, delete, move, copy, etc a file</li>
     <li> ? to opens a menu with all the commands possible </li>
   </ul>
-  <li> CTRL w + left/right - to move through windows</li>
-  <li> CTRL left/right - to move through tabs</li>
+  <li> CTRL arrow key - to move through windows</li>
+  <li> SHIFT left/right - to move through tabs</li>
   <li> CTRL t - open a menu with all the functions in the file</li>
   <li> CTRL l - to close a window</li>
   <li> CTRL a - to install plugins in plug vim</li>
@@ -85,6 +85,7 @@ cd ~/Desktop/Vim && ./install.sh -y
   <li> CTRL v - selects the place you have your cursor in multiple rows, so you can write once, and appear in all lines selected at the same position </li>
   <li> vap - selects all the paragraph</li>
   <li> y - yarn or copy </li>
+  <li> yy - yarn or copy the entire line </li>
   <li> p - paste </li>
   <li> dd - deletes all the line, and copies it </li>
   <li> dap - deletes all the paragraph and copies it </li>

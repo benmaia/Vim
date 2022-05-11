@@ -51,9 +51,12 @@ map <c-a> :PlugInstall<cr>
 autocmd VimEnter * NERDTree
 nnoremap <leader>n :NERDTreeFocus<CR>
 nnoremap <C-b> :NERDTreeToggle<CR>
-nnoremap <C-Left> :tabprevious<CR>
-nnoremap <C-Right> :tabnext<CR>
-
+nnoremap <S-Left> :tabprevious<CR>
+nnoremap <S-Right> :tabnext<CR>
+map <C-Left> <C-w>h
+map <C-Right> <C-w>l
+map <C-Up> <C-w>k
+map <C-Down> <C-w>j
 "Tagbar
 nmap <C-t> :TagbarToggle<CR>
 
@@ -61,6 +64,7 @@ nmap <C-t> :TagbarToggle<CR>
 "let g:ale_enabled 
 "let g:ale_set_signs = 0
 "set signcolumn=no
+set tabstop=3
 set noro
 "set signcolumn=number
 
