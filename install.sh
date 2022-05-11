@@ -96,6 +96,7 @@ vim +PlugInstall +qall
 vim +PluginInstall +qall
 
 ~/.vim/bundle/YouCompleteMe/./install.py
+sudo apt-get install exuberant-ctags
 
 echo -e "${BLUE}Installing Oh-My-Zsh${RES}"
 #OH-MY-ZSH INSTALLATION
