@@ -71,7 +71,7 @@ cd ~/Desktop/Vim && ./install.sh -y
     <li> ? to opens a menu with all the commands possible </li>
   </ul>
   <li> CTRL arrow key - to move through windows</li>
-  <li> SHIFT left/right - to move through tabs</li>
+  <li> ALT left/right - to move through tabs</li>
   <li> CTRL t - open a menu with all the functions in the file</li>
   <li> CTRL l - to close a window</li>
   <li> CTRL a - to install plugins in plug vim</li>

@@ -35,6 +35,9 @@ Plug 'vim-airline/vim-airline'
 "Tagbar
 Plug 'preservim/tagbar'
 
+"42 Header
+Plug '42Paris/42header'
+
 "Norminette
 Plug 'vim-syntastic/syntastic'
 Plug 'alexandregv/norminette-vim'
@@ -51,8 +54,8 @@ map <c-a> :PlugInstall<cr>
 autocmd VimEnter * NERDTree
 nnoremap <leader>n :NERDTreeFocus<CR>
 nnoremap <C-b> :NERDTreeToggle<CR>
-nnoremap <S-Left> :tabprevious<CR>
-nnoremap <S-Right> :tabnext<CR>
+nnoremap <M-Left> :tabprevious<CR>
+nnoremap <M-Right> :tabnext<CR>
 map <C-Left> <C-w>h
 map <C-Right> <C-w>l
 map <C-Up> <C-w>k
@@ -86,6 +89,11 @@ colorscheme sonokai
 "Auto-comments
 filetype plugin on
 map cc <Plug>NERDCommenterInvert
+
+"42 Header
+nnoremap <F5> :Stdheader<cr>
+let g:user42 = 'bmiguel-'
+let g:mail42 = 'bmiguel-@student.42.fr'
 
 "Norminette
 nnoremap <C-n> :Norminette<cr>
@@ -153,7 +161,7 @@ set encoding=UTF-8
 nnoremap <C-l> :q!<cr>
 
 "Make and run
-nnoremap <C-m> :make; ./build/bin/minishell<cr>
+"nnoremap <C-m> :make; ./build/bin/minishell<cr>
 
 "Alias on Vim
 command! -nargs=+ Sub call Sub(<f-args>)
