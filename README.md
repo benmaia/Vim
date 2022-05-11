@@ -84,11 +84,13 @@ cd ~/Desktop/Vim && ./install.sh -y
   <li> SHIFT v - select an entire line and you can select more then 1 line</li>
   <li> CTRL v - selects the place you have your cursor in multiple rows, so you can write once, and appear in all lines selected at the same position </li>
   <li> vap - selects all the paragraph</li>
+  <li> vaw - selects the word where your cursor is </li>
   <li> y - yarn or copy </li>
   <li> yy - yarn or copy the entire line </li>
   <li> p - paste </li>
   <li> dd - deletes all the line, and copies it </li>
   <li> dap - deletes all the paragraph and copies it </li>
+  <li> daw - deletes the word where your cursor is </li>
 </ul>
 <ul>
 <p> Inside FZF Search, the commands are different </p>
