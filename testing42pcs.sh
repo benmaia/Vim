@@ -5,10 +5,10 @@ BLUE='\033[1;34m'
 RES='\033[0m'
 
 #curl -fsSL https://rawgit.com/kube/42homebrew/master/install.sh | zsh
-rm -rf $HOME/.brew && git clone --depth=1 https://github.com/Homebrew/brew $HOME/.brew && echo 'export PATH=$HOME/.brew/bin:$PATH' >> $HOME/.zshrc && source $HOME/.zshrc && brew update
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
 cp ~/Desktop/Vim/custom.zsh-theme ~/.oh-my-zsh/themes
 cp ~/Desktop/Vim/.zshrc ~
+rm -rf $HOME/.brew && git clone --depth=1 https://github.com/Homebrew/brew $HOME/.brew && echo 'export PATH=$HOME/.brew/bin:$PATH' >> $HOME/.zshrc && source $HOME/.zshrc && brew update
 brew install pyenv
 pyenv install 3.9.10
 pyenv global 3.9.10
