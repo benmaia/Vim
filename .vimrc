@@ -51,6 +51,7 @@ call plug#end()
 map <c-a> :PlugInstall<cr>
 
 "NERDTree
+let NERDTreeShowHidden=1
 autocmd VimEnter * NERDTree
 nnoremap <leader>n :NERDTreeFocus<CR>
 nnoremap <C-b> :NERDTreeToggle<CR>
