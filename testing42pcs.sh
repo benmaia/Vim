@@ -4,8 +4,15 @@
 BLUE='\033[1;34m'
 RES='\033[0m'
 
-curl -fsSL https://rawgit.com/kube/42homebrew/master/install.sh | zsh
-brew install python3
+#curl -fsSL https://rawgit.com/kube/42homebrew/master/install.sh | zsh
+rm -rf $HOME/.brew && git clone --depth=1 https://github.com/Homebrew/brew $HOME/.brew && echo 'export PATH=$HOME/.brew/bin:$PATH' >> $HOME/.zshrc && source $HOME/.zshrc && brew update
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
+cp ~/Desktop/Vim/custom.zsh-theme ~/.oh-my-zsh/themes
+cp ~/Desktop/Vim/.zshrc ~
+brew install pyenv
+pyenv install 3.9.10
+pyenv global 3.9.10
+echo -e 'if command -v pyenv 1>/dev/null 2>&1; then\n  eval "$(pyenv init -)"\nfi' >> ~/.zshrc
 brew install pip
 brew install vim
 brew install curl
@@ -19,10 +26,9 @@ git clone https://tpope.io/vim/fugitive.git
 vim -u NONE -c "helptags fugitive/doc" -c q
 python3 -m pip install flake8
 python3 -m pip install --upgrade pip setuptools
-cp -f ~/Desktop/Vim/norminette.vim ~/.vim/plugged/norminette-vim/compiler 
 vim +PlugInstall +qall
 vim +PluginInstall +qall
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
-chsh -s $(which zsh)
-cp ~/Desktop/Vim/.zshrc $HOME
-cp ~/Desktop/Vim/custom.zsh-theme $HOME/.oh-my-zsh/themes
+~/.vim/bundle/YouCompleteMe/./install.py
+brew install ctags
+cd ~/.vim/bundle/YouCompleteMe
+python3 install.py --all -y
