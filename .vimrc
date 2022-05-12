@@ -61,6 +61,13 @@ map <C-Left> <C-w>h
 map <C-Right> <C-w>l
 map <C-Up> <C-w>k
 map <C-Down> <C-w>j
+
+"Move lines
+nnoremap <M-Up> :m-2<CR>
+nnoremap <M-Down> :m+<CR>
+vnoremap <M-Up> :m '<-2<CR>gv=gv
+vnoremap <M-Down> :m '>+1<CR>gv=gv
+
 "Tagbar
 nmap <C-t> :TagbarToggle<CR>
 
