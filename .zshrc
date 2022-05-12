@@ -4,6 +4,7 @@
 # Path to your oh-my-zsh installation.
 export ZSH="/home/$(whoami)/.oh-my-zsh"
 
+#Norminette PATH
 export PATH="$HOME/.local/bin:$PATH"
 
 #Theme
