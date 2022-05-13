@@ -15,16 +15,16 @@ sudo apt install bat
 
 echo -e "${BLUE}Installing Vim${RES}"
 #VIM INSTALLATION
-if [[ -f "/usr/bin/vim" ]]
+if [[ -d "/usr/bin/vim" ]]
 then
-	echo "You have Vim Installed!"
+		  echo "You have Vim Installed!"
 else
-	sudo apt install vim -y
+		  sudo apt install vim -y
 fi
 
 echo -e "${BLUE}Installing Curl${RES}"
 #CURL INSTALLATION
-if [[ -f "/usr/bin/curl" ]]
+if [[ -d "/usr/bin/curl" ]]
 then
 	echo "You have Curl Installed!"
 else
@@ -62,31 +62,49 @@ python3 install.py --all -y
 
 echo -e "${BLUE}Installing Nerd Font${RES}"
 #NERD FONT INSTALL
-mkdir -p ~/.local/share/fonts
-cd ~/.local/share/fonts && curl -fLo "Droid Sans Mono for Powerline Nerd Font Complete.otf" https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/DroidSansMono/complete/Droid%20Sans%20Mono%20Nerd%20Font%20Complete.otf
+if [[ -d "~/.local/share/fonts" ]]
+then
+		  if [[ -f "~/.local/share/fonts/Droid Sans Mono for Powerline Nerd Font Complete.otf" ]]
+		  then
+					 :
+		  else
+					 cd ~/.local/share/fonts && curl -fLo "Droid Sans Mono for Powerline Nerd Font Complete.otf" https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/DroidSansMono/complete/Droid%20Sans%20Mono%20Nerd%20Font%20Complete.otf
+		  fi
+else
+		  mkdir -p ~/.local/share/fonts
+		  if [[ -f "~/.local/share/fonts/Droid Sans Mono for Powerline Nerd Font Complete.otf" ]]
+		  then
+					 :
+		  else
+					 cd ~/.local/share/fonts && curl -fLo "Droid Sans Mono for Powerline Nerd Font Complete.otf" https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/DroidSansMono/complete/Droid%20Sans%20Mono%20Nerd%20Font%20Complete.otf
+		  fi
+fi
 
 echo -e "${BLUE}Installing Vim Fugitive${RES}"
 #VIM FUGITIVE - Git on Vim
-mkdir -p ~/.vim/pack/tpope/start
-cd ~/.vim/pack/tpope/start
-git clone https://tpope.io/vim/fugitive.git
-vim -u NONE -c "helptags fugitive/doc" -c q
+if [[ -d "~/.vim/pack/tpope/start" ]]
+then
+		  :
+else
+		  mkdir -p ~/.vim/pack/tpope/start
+		  cd ~/.vim/pack/tpope/start
+		  git clone https://tpope.io/vim/fugitive.git
+		  vim -u NONE -c "helptags fugitive/doc" -c q
+fi
 
 echo -e "${BLUE}Installing Norminette${RES}"
 #NORMINETTE
-sudo apt-get install -y python3-launchpadlib
-sudo apt install pip
-python3 -m pip install flake8
-python3 -m pip install --upgrade pip setuptools
-python3 -m pip install norminette
-sudo cp -f /home/$(whoami)/Desktop/Vim/norminette.vim /home/$(whoami)/.vim/plugged/norminette-vim/compiler 
-
-echo -e "${BLUE}Installing Vim Fugitive${RES}"
-#VIM FUGITIVE - GIT on VIM
-mkdir -p ~/.vim/pack/tpope/start
-cd ~/.vim/pack/tpope/start
-git clone https://tpope.io/vim/fugitive.git
-vim -u NONE -c "helptags fugitive/doc" -c q
+if [[ -d "~/.local/bin/norminette" ]]
+then
+		  :
+else
+		  sudo apt-get install -y python3-launchpadlib
+		  sudo apt install pip
+		  python3 -m pip install flake8
+		  python3 -m pip install --upgrade pip setuptools
+		  python3 -m pip install norminette
+		  sudo cp -f /home/$(whoami)/Desktop/Vim/norminette.vim /home/$(whoami)/.vim/plugged/norminette-vim/compiler 
+fi
 
 echo -e "${BLUE}Installing Vim Plugins${RES}"
 #INSTALL PLUG VIM PLUGINS
@@ -100,14 +118,23 @@ sudo apt-get install exuberant-ctags
 
 echo -e "${BLUE}Installing Oh-My-Zsh${RES}"
 #OH-MY-ZSH INSTALLATION
-sudo apt install zsh -y
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
-chsh -s $(which zsh)
+if [[ -d "/usr/bin/zsh" ]]
+then
+		  :
+else
+		  sudo apt install zsh -y
+		  chsh -s $(which zsh)
+fi
+
+if [[ -d "~/.oh-my-zsh" ]]
+then
+		  :
+else
+		  sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
+fi
 
 sudo cp /home/$(whoami)/Desktop/Vim/.zshrc /home/$(whoami)
 sudo cp /home/$(whoami)/Desktop/Vim/custom.zsh-theme /home/$(whoami)/.oh-my-zsh/themes
-
-echo -e "${BLUE}Reseting computer${RES}"
 
 #IMPLEMENT ZSH CHANGES
 notify-send "Instalation complete, please restart your computer" 

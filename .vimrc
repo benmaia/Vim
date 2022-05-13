@@ -77,6 +77,7 @@ nmap <C-t> :TagbarToggle<CR>
 "set signcolumn=no
 set tabstop=3
 set noro
+
 " Update a buffer's contents on focus if it changed outside of Vim.
 au FocusGained,BufEnter * :checktime
 "set signcolumn=number
