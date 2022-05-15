@@ -9,7 +9,6 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
 "Auto-complete
-"Install YouCompleteMe https://github.com/ycm-core/YouCompleteMe#linux-64-bit
 Plugin 'Valloric/YouCompleteMe'
 
 call vundle#end()
@@ -21,7 +20,7 @@ call plug#begin()
 "NERDtree
 Plug 'preservim/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
-Plug 'ryanoasis/vim-devicons' "Install Font https://github.com/ryanoasis/nerd-fonts#font-installation
+Plug 'ryanoasis/vim-devicons'
 
 "Colorscheme
 Plug 'sainnhe/sonokai'
@@ -46,9 +45,46 @@ Plug 'alexandregv/norminette-vim'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 
-
 call plug#end()
 map <c-a> :PlugInstall<cr>
+
+"Fzf search
+nnoremap <C-f> :Files<cr>
+
+"Set encoding
+set encoding=utf-8
+scriptencoding utf-8
+
+"Show white spaces
+set list
+set listchars=eol:^,tab:\|\ ,trail:\ ,space:·,extends:>,precedes:<
+
+"Identation
+set autoindent
+set smartindent
+
+"Cmd History
+set history=5000
+
+"Line Nbr
+set number
+
+"Cursor line
+set cursorline
+
+"Activate mouse
+set mouse=a
+
+"Share download between Vim and GUI
+set clipboard=unnamedplus
+
+"Fold with identation
+set foldmethod=syntax
+set foldlevel=99
+nnoremap <space> za
+
+"Handle Vim
+nnoremap <C-l> :q!<cr>
 
 "NERDTree
 let NERDTreeShowHidden=1
@@ -71,7 +107,6 @@ vnoremap <M-Down> :m '>+1<CR>gv=gv
 "Tagbar
 nmap <C-t> :TagbarToggle<CR>
 
-"Idk
 "let g:ale_enabled 
 "let g:ale_set_signs = 0
 "set signcolumn=no
@@ -80,7 +115,6 @@ set noro
 
 " Update a buffer's contents on focus if it changed outside of Vim.
 au FocusGained,BufEnter * :checktime
-"set signcolumn=number
 
 "Syntax color
 syntax on
@@ -100,6 +134,12 @@ colorscheme sonokai
 "Auto-comments
 filetype plugin on
 map cc <Plug>NERDCommenterInvert
+
+"Alias on Vim
+command! -nargs=+ Sub call Sub(<f-args>)
+function! Sub( ... )
+		execute printf('%%substitute/\<%s\>/%s/g', a:1, a:2)
+endfunction
 
 "42 Header
 nnoremap <F5> :Stdheader<cr>
@@ -133,48 +173,3 @@ let g:syntastic_auto_loc_list = 1
 
 " Skip check when closing
 let g:syntastic_check_on_wq = 0
-
-"Fzf search
-nnoremap <C-f> :Files<cr>
-
-"set termguicolors
-"colorscheme bat
-
-"Identation
-set autoindent
-set smartindent
-
-"Cmd History
-set history=5000
-
-"Line Nbr
-set number
-
-"Cursor line
-set cursorline
-
-"Activate mouse
-set mouse=a
-
-"Share download between Vim and GUI
-set clipboard=unnamedplus
-
-"Fold with identation
-set foldmethod=syntax
-set foldlevel=99
-nnoremap <space> za
-
-"Set encoding
-set encoding=UTF-8
-
-"Handle Vim
-nnoremap <C-l> :q!<cr>
-
-"Make and run
-"nnoremap <C-m> :make; ./build/bin/minishell<cr>
-
-"Alias on Vim
-command! -nargs=+ Sub call Sub(<f-args>)
-function! Sub( ... )
-    execute printf('%%substitute/\<%s\>/%s/g', a:1, a:2)
-endfunction

@@ -22,21 +22,6 @@ fi
 #Setting Vim Up
 cp ~/Desktop/Vim/.vimrc ~
 
-	#Setting your user to 42header
-filename=".vimrc"
-read -p "let g:user42 = 'bmiguel-'" search
-read -p "let g:user42 = '$(whoami)'" replace
-if [[ $search != "" && $replace != "" ]]; then
-sed -i "s/$search/$replace/" $filename
-fi
-
-	#Setting your mail to 42header
-read -p "let g:mail42 = 'bmiguel-@student.42.fr'" search
-read -p "let g:mail42 = '$(whoami)@student.42.fr'" replace
-if [[ $search != "" && $replace != "" ]]; then
-sed -i "s/$search/$replace/" $filename
-fi
-
 	#Disable the PATH to norm (42macs can't set a new path)
 read -p "let g:syntastic_c_norminette_exec = 'norminette'" search
 read -p "" replace
