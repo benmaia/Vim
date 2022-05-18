@@ -55,6 +55,9 @@ nnoremap <C-f> :Files<cr>
 set encoding=utf-8
 scriptencoding utf-8
 
+"Change Vim root
+nnoremap <C-r> :cd %:p:h<CR>:pwd<CR>
+
 "Show white spaces
 set list
 set listchars=eol:^,tab:\|\ ,trail:\ ,space:·,extends:>,precedes:<
