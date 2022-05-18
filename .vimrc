@@ -127,12 +127,16 @@ let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#formatter = 'unique_tail'
 
 "Colorscheme
-if has('termguicolors')
-	set termguicolors
+set t_Co=256
+if has('+termguicolors')
+		let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+		let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+		set termguicolors
 endif
 let g:sonokai_style = 'andromeda'
 let g:sonokai_better_performance = 1
 colorscheme sonokai
+autocmd ColorScheme * highlight Normal ctermbg=NONE guibg=NONE
 
 "Auto-comments
 filetype plugin on
@@ -166,13 +170,13 @@ let g:syntastic_c_include_dirs = ['include', '../include', '../../include', 'lib
 let g:syntastic_c_norminette_args = '-R CheckTopCommentHeader'
 
 " Check errors when opening a file (disable to speed up startup time)
-let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_open = 0
 
 " Enable error list
 let g:syntastic_always_populate_loc_list = 1
 
 " Automatically open error list
-let g:syntastic_auto_loc_list = 1
+let g:syntastic_auto_loc_list = 0
 
 " Skip check when closing
-let g:syntastic_check_on_wq = 0
+let g:syntastic_check_on_wq = 1
