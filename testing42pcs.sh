@@ -15,9 +15,7 @@ cp ~/Desktop/Vim/.zshrc ~
 filename=".zshrc"
 read -p 'export PATH="$HOME/.local/bin:$PATH"' search
 read -p "" replace
-if [[ $search != "" && $replace != "o" ]]; then
-sed -i "s/$search/$replace/" $filename
-fi
+[ $search != "" && $replace != "o" ] && sed -i "s/$search/$replace/" $filename
 
 #Setting Vim Up
 cp ~/Desktop/Vim/.vimrc ~
@@ -25,9 +23,7 @@ cp ~/Desktop/Vim/.vimrc ~
 	#Disable the PATH to norm (42macs can't set a new path)
 read -p "let g:syntastic_c_norminette_exec = 'norminette'" search
 read -p "" replace
-if [[ $search != "" && $replace != "o" ]]; then
-sed -i "s/$search/$replace/" $filename
-fi
+[ $search != "" && $replace != "o" ] && sed -i "s/$search/$replace/" $filename
 
 #Install Homebrew
 rm -rf $HOME/.brew && git clone --depth=1 https://github.com/Homebrew/brew $HOME/.brew && echo 'export PATH=$HOME/.brew/bin:$PATH' >> $HOME/.zshrc && source $HOME/.zshrc && brew update
