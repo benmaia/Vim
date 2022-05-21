@@ -65,6 +65,8 @@ set listchars=eol:^,tab:\|\ ,trail:\ ,space:·,extends:>,precedes:<
 "Identation
 set autoindent
 set smartindent
+set tabstop=2
+set shiftwidth=2
 
 "Cmd History
 set history=5000
@@ -109,12 +111,6 @@ vnoremap <M-Down> :m '>+1<CR>gv=gv
 
 "Tagbar
 nmap <C-t> :TagbarToggle<CR>
-
-"let g:ale_enabled 
-"let g:ale_set_signs = 0
-"set signcolumn=no
-set tabstop=4
-set noro
 
 " Update a buffer's contents on focus if it changed outside of Vim.
 au FocusGained,BufEnter * :checktime
@@ -180,3 +176,8 @@ let g:syntastic_auto_loc_list = 0
 
 " Skip check when closing
 let g:syntastic_check_on_wq = 1
+
+"let g:ale_enabled 
+"let g:ale_set_signs = 0
+set signcolumn=no
+set noro
