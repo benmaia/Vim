@@ -73,7 +73,7 @@ set history=5000
 set number
 
 "Cursor line
-set cursorline
+"set cursorline
 
 "Activate mouse
 set mouse=a
@@ -113,7 +113,7 @@ nmap <C-t> :TagbarToggle<CR>
 "let g:ale_enabled 
 "let g:ale_set_signs = 0
 "set signcolumn=no
-set tabstop=3
+set tabstop=4
 set noro
 
 " Update a buffer's contents on focus if it changed outside of Vim.
